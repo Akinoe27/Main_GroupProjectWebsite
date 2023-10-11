@@ -1,9 +1,10 @@
 body {
-  height: 100%;
+
   margin: 0;
   font-family: "Raleway", sans-serif;
   grid-template-rows: 1fr 1fr;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .first-container {
@@ -100,6 +101,7 @@ main {
   line-height: 1.2;
   color: rgb(5, 121, 14);
 }
+
 h2 {
   text-align: center;
   font-size: 48px;
@@ -220,7 +222,27 @@ footer {
   font-size: 2em;
 }
 
+.carousel-inner{
+  position: relative;
+  left: 30vw;
+  top: 10vh;
+  max-width: 800px;
+  padding-bottom: 150px;
+  padding-top: 5px;
+}
+.pics{
+  width: 800px;
+}
+.carousel-control-next-icon{
+  position: relative;
+  right: 21vw;
+}
 
+.carousel-control-prev-icon{
+  position: relative;
+  left: 24vw;
+}
+/* media query */
 @media screen and (max-width: 1200px)
 {
   .column p {
@@ -244,6 +266,7 @@ footer {
   line-height: 1.2;
   color: rgb(5, 121, 14);
 }
+
 .column1 h2 {
   font-size: 30px;
   margin: 0 0 10px;
@@ -321,5 +344,15 @@ footer {
 .column h2 {
   font-size: 20px;
   line-height: 1;
+}
+
+.carousel-inner{
+  position: relative;
+  left: 10vw;
+  top: 5vh;
+  max-width: 300px;
+}
+.pics{
+  width: 300px;
 }
   } 
